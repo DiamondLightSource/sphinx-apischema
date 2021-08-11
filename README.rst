@@ -65,6 +65,6 @@ Generates documenation that looks like this:
     Anything below this line is used when viewing README.rst and will be replaced
     when included in index.rst
 
-.. |MyClass| image:: https://raw.githubusercontent.com/dls-controls/spinx-apischema/master/docs/images/MyClass.png
+.. |MyClass| image:: https://raw.githubusercontent.com/dls-controls/sphinx-apischema/master/docs/images/MyClass.png
 
 See https://dls-controls.github.io/sphinx-apischema for more detailed documentation.
