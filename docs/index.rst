@@ -1,6 +1,8 @@
 .. include:: ../README.rst
     :end-before: when included in index.rst
 
+.. |MyClass| image:: images/MyClass.png
+
 How the documentation is structured
 -----------------------------------
 
@@ -30,7 +32,7 @@ Practical step-by-step guides for the more experienced user.
     :caption: How-to Guides
     :hidden:
 
-    how-to/accomplish-a-task
+    how-to/add-autodoc-directive
 
 .. rst-class:: columns
 
@@ -43,7 +45,7 @@ Explanation of how the library works and why it works that way.
     :caption: Explanations
     :hidden:
 
-    explanations/why-is-something-so
+    explanations/how-it-works
 
 .. rst-class:: columns
 
@@ -56,7 +58,6 @@ Technical reference material, for classes, methods, APIs, commands, and contribu
     :caption: Reference
     :hidden:
 
-    reference/api
     reference/contributing
 
 .. rst-class:: endcolumns

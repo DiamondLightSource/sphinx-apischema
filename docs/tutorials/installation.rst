@@ -42,7 +42,20 @@ from github::
 
     python3 -m pip install git+git://github.com/dls-controls/sphinx_apischema.git
 
-The library should now be installed and the commandline interface on your path.
-You can check the version that has been installed by typing::
 
-    sphinx_apischema --version
+Including in Sphinx Documentation
+---------------------------------
+
+Add ``sphinx_apischema`` to the ``extensions`` list in the ``conf.py`` file for
+your documentation. For example:
+
+.. code-block:: python
+
+    extensions = [
+        # <Preexisting config>
+        ...,
+        # Use this for generating API docs
+        "sphinx.ext.autodoc",
+        # Makes autodoc understand apischema annotated classes/functions
+        "sphinx_apischema",
+    ]

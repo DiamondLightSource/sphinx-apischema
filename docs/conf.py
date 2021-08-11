@@ -12,10 +12,10 @@
 import os
 import sys
 
+import sphinx_apischema  # noqa
 
 sys.path.insert(0, os.path.abspath(os.path.join(__file__, "..", "..")))
 
-import sphinx_apischema  # noqa
 
 # -- General configuration ------------------------------------------------
 
@@ -45,6 +45,8 @@ extensions = [
     "sphinx.ext.viewcode",
     # Adds the inheritance-diagram generation directive
     "sphinx.ext.inheritance_diagram",
+    # Makes autodoc understand apischema annotated classes/functions
+    "sphinx_apischema",
 ]
 
 # If true, Sphinx will warn about all references where the target cannot
@@ -93,7 +95,10 @@ pygments_style = "sphinx"
 
 # This means you can link things like `str` and `asyncio` to the relevant
 # docs in the python documentation.
-intersphinx_mapping = dict(python=("https://docs.python.org/3/", None))
+intersphinx_mapping = dict(
+    python=("https://docs.python.org/3/", None),
+    sphinx=("https://www.sphinx-doc.org/en/master/", None),
+)
 
 # A dictionary of graphviz graph attributes for inheritance diagrams.
 inheritance_graph_attrs = dict(rankdir="TB")

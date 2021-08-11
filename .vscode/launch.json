@@ -5,6 +5,14 @@
     "version": "0.2.0",
     "configurations": [
         {
+            "name":"Sphinx build",
+            "type":"python",
+            "request":"launch",
+            "program":"/scratch/tmc43/pipenv/sphinx-apischema-MPyrnMz-/bin/sphinx-build",
+            "console":"integratedTerminal",
+            "args": ["-EWT", "--keep-going", "${workspaceFolder}/docs", "{workspaceFolder}/build/html"]
+        },
+        {
             "name": "Debug Unit Test",
             "type": "python",
             "request": "test",
