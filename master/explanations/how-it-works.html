@@ -8,7 +8,7 @@
   
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   
-  <title>How it works &mdash; sphinx_apischema 0.0+untagged.gd066d6f documentation</title>
+  <title>How it works &mdash; sphinx-apischema 0.0+untagged.ga3118c4 documentation</title>
   
 
   
@@ -61,7 +61,7 @@
           
 
           
-            <a href="../index.html" class="icon icon-home"> sphinx_apischema
+            <a href="../index.html" class="icon icon-home"> sphinx-apischema
           
 
           
@@ -145,7 +145,7 @@
       if (dirs.has(name)) {
         var li = document.createElement("li");
         var a = document.createElement("a");
-        a.href = 'https://dls-controls.github.io/sphinx_apischema/' + name;
+        a.href = 'https://dls-controls.github.io/sphinx-apischema/' + name;
         a.innerText = name;
         li.appendChild(a)
         document.getElementById('versions').appendChild(li);
@@ -153,13 +153,13 @@
     }
     Promise.all([
       // Find gh-pages directories and populate `dirs`
-      fetch("https://api.github.com/repos/dls-controls/sphinx_apischema/contents?ref=gh-pages")
+      fetch("https://api.github.com/repos/dls-controls/sphinx-apischema/contents?ref=gh-pages")
       .then(response => response.json())
       .then(data => data.forEach(function(e) {
         if (e.type == "dir") dirs.add(e.name);
       })),
       // Add tags to `versions`
-      fetch('https://api.github.com/repos/dls-controls/sphinx_apischema/tags')
+      fetch('https://api.github.com/repos/dls-controls/sphinx-apischema/tags')
         .then(response => response.json())
         .then(data => data.forEach(function(e) {
           versions.push(e.name);
@@ -178,7 +178,7 @@
       <nav class="wy-nav-top" aria-label="top navigation">
         
           <i data-toggle="wy-nav-top" class="fa fa-bars"></i>
-          <a href="../index.html">sphinx_apischema</a>
+          <a href="../index.html">sphinx-apischema</a>
         
       </nav>
 
