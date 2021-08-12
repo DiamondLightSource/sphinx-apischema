@@ -20,7 +20,7 @@ sys.path.insert(0, os.path.abspath(os.path.join(__file__, "..", "..")))
 # -- General configuration ------------------------------------------------
 
 # General information about the project.
-project = "sphinx_apischema"
+project = "sphinx-apischema"
 copyright = "2021, Diamond Light Source"
 author = "Tom Cobb"
 

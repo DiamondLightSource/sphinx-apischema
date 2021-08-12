@@ -24,7 +24,7 @@ sphinx-rtd-theme = "*"
 
 [packages]
 # All other package requirements from setup.cfg
-sphinx_apischema = {editable = true,path = "."}
+sphinx-apischema = {editable = true,path = "."}
 
 [scripts]
 tests = "python -m pytest"
