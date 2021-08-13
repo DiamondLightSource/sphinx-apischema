@@ -9,6 +9,7 @@ Sphinx extension to autodoc for apischema annotated classes/functions
 PyPI           ``pip install sphinx-apischema``
 Source code    https://github.com/dls-controls/sphinx-apischema
 Documentation  https://dls-controls.github.io/sphinx-apischema
+Changelog      https://github.com/dls-controls/sphinx-apischema/blob/master/CHANGELOG.rst
 ============== ==============================================================
 
 If you have a class that looks like this:
