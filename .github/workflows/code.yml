@@ -74,7 +74,9 @@ jobs:
           path: dist
 
       - name: Github Release
-        uses: softprops/action-gh-release@v1
+        # We pin to the SHA, not the tag, for security reasons.
+        # https://docs.github.com/en/actions/learn-github-actions/security-hardening-for-github-actions#using-third-party-actions
+        uses: softprops/action-gh-release@2d72d869af3bf23602f9593a1e3fd739b80ac1eb  # v0.1.12
         with:
           files: dist/*
           body: See [Changelog](CHANGELOG.rst) for more details
