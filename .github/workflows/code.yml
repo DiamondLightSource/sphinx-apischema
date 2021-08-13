@@ -33,7 +33,7 @@ jobs:
 
       - name: Install Python Dependencies
         run: |
-          pip install pipenv twine build
+          pip install pipenv build
           pipenv install --dev --deploy --python $(python -c 'import sys; print(sys.executable)') && pipenv graph
 
       - name: Create Sdist and Wheel
@@ -73,9 +73,6 @@ jobs:
           name: dist
           path: dist
 
-      - name: Install Python Dependencies
-        run: pip install twine
-
       - name: Github Release
         uses: softprops/action-gh-release@v1
         with:
@@ -88,5 +85,4 @@ jobs:
         env:
           TWINE_USERNAME: __token__
           TWINE_PASSWORD: ${{ secrets.pypi_token }}
-        run: twine upload dist/*
-
+        run: pipx run twine upload dist/*
