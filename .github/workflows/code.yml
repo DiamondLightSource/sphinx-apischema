@@ -19,7 +19,7 @@ jobs:
             python: "3.7"
             publish: true
 
-    name: ${{ matrix.os }}/${{ matrix.python }}
+    name: build/${{ matrix.python }}/${{ matrix.os }}
     runs-on: ${{ matrix.os }}
 
     steps:
@@ -52,7 +52,7 @@ jobs:
       - name: Upload coverage to Codecov
         uses: codecov/codecov-action@v1
         with:
-          name: ${{ matrix.os }}/${{ matrix.python }}
+          name: ${{ matrix.python }}/${{ matrix.os }}
           files: cov.xml
 
       - name: Upload Wheel and Sdist as artifacts
@@ -62,7 +62,7 @@ jobs:
           name: dist
           path: dist/*
 
-  upload_pypi:
+  release:
     needs: [build]
     runs-on: ubuntu-latest
     # upload to PyPI and make a release on every tag
