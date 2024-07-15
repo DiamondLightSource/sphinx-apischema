@@ -7,9 +7,9 @@ Sphinx extension to autodoc for apischema annotated classes/functions
 
 ============== ==============================================================
 PyPI           ``pip install sphinx-apischema``
-Source code    https://github.com/dls-controls/sphinx-apischema
-Documentation  https://dls-controls.github.io/sphinx-apischema
-Changelog      https://github.com/dls-controls/sphinx-apischema/blob/master/CHANGELOG.rst
+Source code    https://github.com/DiamondLightSource/sphinx-apischema
+Documentation  https://DiamondLightSource.github.io/sphinx-apischema
+Changelog      https://github.com/DiamondLightSource/sphinx-apischema/blob/master/CHANGELOG.rst
 ============== ==============================================================
 
 If you have a class that looks like this:
@@ -42,16 +42,16 @@ Generates documenation that looks like this:
 
 |MyClass|
 
-.. |code_ci| image:: https://github.com/dls-controls/sphinx-apischema/workflows/Code%20CI/badge.svg?branch=master
-    :target: https://github.com/dls-controls/sphinx-apischema/actions?query=workflow%3A%22Code+CI%22
+.. |code_ci| image:: https://github.com/DiamondLightSource/sphinx-apischema/workflows/Code%20CI/badge.svg?branch=master
+    :target: https://github.com/DiamondLightSource/sphinx-apischema/actions?query=workflow%3A%22Code+CI%22
     :alt: Code CI
 
-.. |docs_ci| image:: https://github.com/dls-controls/sphinx-apischema/workflows/Docs%20CI/badge.svg?branch=master
-    :target: https://github.com/dls-controls/sphinx-apischema/actions?query=workflow%3A%22Docs+CI%22
+.. |docs_ci| image:: https://github.com/DiamondLightSource/sphinx-apischema/workflows/Docs%20CI/badge.svg?branch=master
+    :target: https://github.com/DiamondLightSource/sphinx-apischema/actions?query=workflow%3A%22Docs+CI%22
     :alt: Docs CI
 
-.. |coverage| image:: https://codecov.io/gh/dls-controls/sphinx-apischema/branch/master/graph/badge.svg
-    :target: https://codecov.io/gh/dls-controls/sphinx-apischema
+.. |coverage| image:: https://codecov.io/gh/DiamondLightSource/sphinx-apischema/branch/master/graph/badge.svg
+    :target: https://codecov.io/gh/DiamondLightSource/sphinx-apischema
     :alt: Test Coverage
 
 .. |pypi_version| image:: https://img.shields.io/pypi/v/sphinx-apischema.svg
@@ -66,6 +66,6 @@ Generates documenation that looks like this:
     Anything below this line is used when viewing README.rst and will be replaced
     when included in index.rst
 
-.. |MyClass| image:: https://raw.githubusercontent.com/dls-controls/sphinx-apischema/master/docs/images/MyClass.png
+.. |MyClass| image:: https://raw.githubusercontent.com/DiamondLightSource/sphinx-apischema/master/docs/images/MyClass.png
 
-See https://dls-controls.github.io/sphinx-apischema for more detailed documentation.
+See https://DiamondLightSource.github.io/sphinx-apischema for more detailed documentation.

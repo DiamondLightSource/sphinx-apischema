@@ -40,7 +40,7 @@ You can now use ``pip`` to install the library::
 If you require a feature that is not currently released you can also install
 from github::
 
-    python3 -m pip install git+git://github.com/dls-controls/sphinx-apischema.git
+    python3 -m pip install git+git://github.com/DiamondLightSource/sphinx-apischema.git
 
 
 Including in Sphinx Documentation

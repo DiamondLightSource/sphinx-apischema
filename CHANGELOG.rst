@@ -18,5 +18,5 @@ Nothing yet
 - Initial release
 
 
-.. _Unreleased: https://github.com/dls-controls/sphinx-apischema/compare/0.1...HEAD
-.. _0.1: https://github.com/dls-controls/sphinx-apischema/releases/tag/0.1
+.. _Unreleased: https://github.com/DiamondLightSource/sphinx-apischema/compare/0.1...HEAD
+.. _0.1: https://github.com/DiamondLightSource/sphinx-apischema/releases/tag/0.1
