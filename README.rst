@@ -1,3 +1,5 @@
+**We have migrated to using pydantic, so this repository is now archived and will no longer be updated**
+
 sphinx-apischema
 ================
 
